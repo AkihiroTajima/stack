@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "test.md",
+                "file": "編集方針.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "test"
+              "title": "編集方針"
             }
           }
         ]
@@ -193,6 +193,6 @@
   },
   "active": "7673704f36e2833a",
   "lastOpenFiles": [
-    "test.md"
+    "編集方針.md"
   ]
 }
