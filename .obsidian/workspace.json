@@ -4,53 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "1837602444040533",
+        "id": "9183c050e459ed69",
         "type": "tabs",
         "children": [
           {
-            "id": "7673704f36e2833a",
+            "id": "555d2d709ed31c55",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "編集方針.md",
+                "file": "職務経歴書.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "編集方針"
-            }
-          },
-          {
-            "id": "cd534fd66b8453e2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "心の哲学入門.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "心の哲学入門"
-            }
-          },
-          {
-            "id": "41a08ff335c13c93",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ITエンジニアの転職学.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "ITエンジニアの転職学"
+              "title": "職務経歴書"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -107,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "b7cc01e96cebb72a",
@@ -221,10 +191,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "41a08ff335c13c93",
+  "active": "555d2d709ed31c55",
   "lastOpenFiles": [
-    "心の哲学入門.md",
+    "職務経歴書.md",
     "ITエンジニアの転職学.md",
+    "心の哲学入門.md",
     "編集方針.md"
   ]
 }
