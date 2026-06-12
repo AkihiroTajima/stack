@@ -1,5 +1,6 @@
 ## 達成目標
- - THE CHALLENGE RACE YOKOHAMAのフルマラソンを完走する
+ - THE CHALLENGE RACE YOKOHAMA(時間制限4.5時間)のフルマラソンを完走する
+ - 目標レースはシリーズ10(9/23)
 
 ## 達成計画
 目的：トレーニングを通じて必要な持久力をもつ
