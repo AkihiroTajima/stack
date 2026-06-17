@@ -27,11 +27,11 @@
 > 2026年改定の要点: Data&AnalyticsとAutomation/Flowの比重が上がり、**Agentforce AIが新設**。逆に旧来のConfiguration/Object Managerは各20%→15%に縮小。学習時間はこの配点に比例配分する。
 
 ## 使用教材
-| 区分 | 教材 | 内容 | 言語 |
-| --- | --- | --- | --- |
-| **メイン講座** | [Complete Salesforce Certified Platform Administrator Course（Mike Wheeler）](https://www.udemy.com/course/salesforce-administrator/) | 18セクション・534講義・約39.6時間。8分野＋Agentforceを網羅。ChatGPT版／非ChatGPT版の2トラック＋模試60問付き。評価4.6（3.7万件） | 英語 |
-| **バックアップ講座** | [salesforce-admin1](https://www.udemy.com/course/salesforce-admin1/) | メイン講座が言語的に厳しい場合の切り替え先 | 日本語想定 |
-| **問題演習** | [Salesforce Certified Platform Admin – Practice Exam 2026（NextGen）](https://www.udemy.com/course/salesforce-certified-platform-admin-practice-exam-2026/) | 本番形式の時間制限テスト4本・計259問・全問解説付き。2026年最新仕様 | 英語 |
+| 区分           | 教材                                                                                                                                                                 | 内容                                                                                    | 言語    |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------- | ----- |
+| **メイン講座**    | [Complete Salesforce Certified Platform Administrator Course（Mike Wheeler）](https://www.udemy.com/course/salesforce-administrator/learn/lecture/37220476#overview) | 18セクション・534講義・約39.6時間。8分野＋Agentforceを網羅。ChatGPT版／非ChatGPT版の2トラック＋模試60問付き。評価4.6（3.7万件） | 英語    |
+| **バックアップ講座** | [salesforce-admin1](https://www.udemy.com/course/salesforce-admin1/)                                                                                               | メイン講座が言語的に厳しい場合の切り替え先                                                                 | 日本語想定 |
+| **問題演習**     | [Salesforce Certified Platform Admin – Practice Exam 2026（NextGen）](https://www.udemy.com/course/salesforce-certified-platform-admin-practice-exam-2026/)          | 本番形式の時間制限テスト4本・計259問・全問解説付き。2026年最新仕様                                                 | 英語    |
 
 ### 教材運用の方針
 - **メイン講座は英語に取り組み、不自由があればバックアップ（日本語）に切り替える。**
