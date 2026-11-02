@@ -1,0 +1,77 @@
+# Obsidian vault を Quartz でビルドして GitHub Pages に公開する
+# 置き場所: vault リポジトリの .github/workflows/deploy.yml
+name: Publish vault to GitHub Pages
+
+on:
+  push:
+    branches: [main]        # vault のブランチ名が master 等なら変更
+  workflow_dispatch:         # Actions タブから手動実行も可能
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout vault
+        uses: actions/checkout@v4
+        with:
+          path: vault
+
+      - name: Checkout Quartz
+        uses: actions/checkout@v4
+        with:
+          repository: jackyzha0/quartz
+          ref: v4
+          path: quartz
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install Quartz
+        working-directory: quartz
+        run: npm ci
+
+      - name: Copy notes into Quartz
+        run: |
+          rm -rf quartz/content
+          mkdir -p quartz/content
+          # 公開したくないフォルダは --exclude で追加する
+          rsync -a \
+            --exclude '.git' \
+            --exclude '.github' \
+            --exclude '.obsidian' \
+            --exclude '.trash' \
+            vault/ quartz/content/
+
+      - name: Configure site URL and title
+        working-directory: quartz
+        run: |
+          sed -i 's|baseUrl: ".*"|baseUrl: "${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"|' quartz.config.ts
+          sed -i 's|pageTitle: ".*"|pageTitle: "${{ github.event.repository.name }}"|' quartz.config.ts
+
+      - name: Build
+        working-directory: quartz
+        run: npx quartz build
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: quartz/public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
